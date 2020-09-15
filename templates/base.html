@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Cat for you{% block extra_title %}{% endblock extra_title %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static%}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- <link rel="icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico"> -->
+
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+    {% block extra_head %}
+    {% endblock extra_head %}
+
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex">
+            
+            <a href="/" class="navbar-brend mr-3">
+
+                <img src="{% static 'img/logo.png' %}" alt="Логотип" height="50" width="50">
+
+            </a>
+
+            <span class="navbar-text">CAT FOR YOU</span>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                    
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="collapse_target">
+
+                <ul class="navbar-nav">
+
+                    {% block links %}
+                    {% endblock links %}
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        {% block content %}
+        {% endblock content %}
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

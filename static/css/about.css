@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 48px;
+    color: #3A3E3B;
+}
+
+p { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #3A3E3B;
+}

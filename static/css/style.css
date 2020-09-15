@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Nanum Gothic Coding';
+    src: url('../fonts/NanumGothicCoding-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #d1d1d1;
+}
+
+.nav-link {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+
+    color: white !important;
+}   
+
+.nav-link:hover {
+    color: #6F9CEB !important;
+}
+
+.active {
+    color: #A9CEF4 !important;
+}
+
+.navbar-text {
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: orange !important;
+}
